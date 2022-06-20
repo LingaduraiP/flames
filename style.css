@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    60deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(203, 255, 206, 1) 0%,
+    rgba(95, 155, 255, 1) 100%
+  );
+  height: 100vh;
+  font-family: "Lobster";
+}
+.container {
+  box-shadow: -13px 17px 22px 5px rgba(0, 0, 0, 0.1);
+  padding: 5rem;
+  border-radius: 2rem;
+  background: linear-gradient(
+    25deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(203, 255, 206, 1) 0%,
+    rgba(127, 255, 134, 0.4990371148459384) 100%,
+    rgba(110, 255, 117, 1) 100%,
+    rgba(135, 255, 141, 1) 100%,
+    rgba(95, 255, 103, 1) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30rem;
+  width: 20rem;
+  /* overflow: hidden; */
+  transition: all 0.5s;
+}
+.disable {
+  display: none;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.heading {
+  font-size: 2rem;
+  text-decoration: underline;
+  color: #1b29e9;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.input {
+  margin: 1rem;
+  height: 3rem;
+  padding: 10px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  color: #3939e7;
+  outline: none;
+  font-family: inherit;
+}
+.input::placeholder {
+  color: #1b29e9;
+  opacity: 0.6;
+  font-family: inherit;
+}
+.btn {
+  margin: 1rem;
+  height: 4rem;
+  width: 8rem;
+  padding: 0.5rem 1rem;
+  color: #1b29e9;
+  font-size: 1.4rem;
+  font-family: inherit;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  box-shadow: 9px 14px 15px -3px rgba(0, 0, 0, 0.1),
+    -11px -14px 35px 13px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(
+    25deg,
+    rgba(185, 246, 255, 1) 0%,
+    rgba(169, 254, 173, 1) 100%
+  );
+  transition: all 0.1s;
+}
+.btn:active {
+  font-size: 1.2rem;
+}
+.result {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.img {
+  width: 12rem;
+  height: 13rem;
+  border-radius: 50%;
+  object-fit: cover;
+  /* background-position: ; */
+}
+.result h1 {
+  margin: 1rem 0.5rem;
+  color: #1b29e9;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
